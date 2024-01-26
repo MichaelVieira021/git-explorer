@@ -1,4 +1,6 @@
-# Git-explorer
+<div>
+  <img src="./img/git-explorer.png" alt="Git Explorer Image">
+</div>
 
 Bem-vindo ao Git-explorer! Este repositório abrange não apenas os comandos essenciais do Git, mas também boas práticas, conceitos do SemVer e estratégias do GitFlow.
 
