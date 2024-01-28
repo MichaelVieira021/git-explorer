@@ -262,43 +262,91 @@ Permite a determinação automática do próximo número de versão a ser aplica
 <details>
   <summary>Introdução ao GitFlow</summary>
 <div>
- 
-  </div>
+
+```
+O Gitflow foi um método inovador para gerenciar ramificações no Git, 
+considerados práticas recomendadas para o desenvolvimento contínuo e DevOps modernos.
+Facilita a colaboração, designando funções específicas aos ramos e delineando interações
+```
+</div>
 </details>
 
 <details>
   <summary>Main</summary>
 <div>
- 
-  </div>
+
+```
+FUNÇÃO:
+Representa a branch principal e estável do código. É a versão de produção do software.
+
+USO:
+Cada commit nessa branch reflete uma versão do software que foi ou será implantada em produção.
+```  
+</div>
 </details>
 
 <details>
   <summary>Develop</summary>
 <div>
- 
-  </div>
+
+```
+FUNÇÃO:
+É a branch de desenvolvimento principal, onde as novas funcionalidades são integradas
+antes de serem enviadas para produção.
+
+USO:
+Os desenvolvedores trabalham nas branches de feature e, quando concluídas,
+mesclam suas alterações na branch develop para integração.
+```   
+</div>
 </details>
 
 <details>
   <summary>Feature</summary>
 <div>
- 
-  </div>
+
+```
+Função:
+Cada branch de feature representa uma nova funcionalidade ou melhoria específica.
+
+Uso:
+As branches de feature são criadas a partir da branch develop,
+onde os desenvolvedores implementam e testam suas funcionalidades.
+Após a conclusão, a branch de feature é mesclada de volta na develop
+```  
+</div>
 </details>
 
 <details>
   <summary>Hotfix</summary>
 <div>
- 
-  </div>
+
+```
+Função:
+Usada para correções rápidas de bugs críticos em produção.
+
+Uso:
+Quando um bug crítico é detectado na versão de produção (branch main),
+uma branch de hotfix é criada, a correção é implementada, e
+a branch de hotfix é mesclada tanto na main quanto na develop.
+```  
+</div>
 </details>
 
 <details>
   <summary>Release</summary>
 <div>
- 
-  </div>
+
+```
+Função:
+Prepara o código para um próximo lançamento ou versão.
+
+USO:
+Quando a develop atinge um ponto estável e está pronta para uma nova versão, uma branch de release é criada.
+Essa branch é usada para realizar ajustes finais, testes e preparar a versão.
+Após a conclusão, a branch de release é mesclada na main e develop, marcando o lançamento.
+``` 
+</div>
 </details>
 
 
