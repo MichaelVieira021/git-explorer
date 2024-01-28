@@ -166,22 +166,95 @@ Bem-vindo ao Git-explorer! Este repositório abrange não apenas os comandos ess
 ## Versionamento Semântico
 
 <details>
-    <summary>O que é SemVer?</summary>
+  <summary>O que é SemVer?</summary>
+<div>
 
+```
+O SemVer, ou Versionamento Semântico, é uma convenção para atribuição de versões a software,
+com o objetivo de facilitar a compreensão das mudanças no código pelos desenvolvedores e usuários.
+A versão é representada por três números no formato MAJOR.MINOR.PATCH, como por exemplo, 1.2.3.
+```
+
+</div>
 </details>
 
 <details>
   <summary>Especificação de versionamento semântico</summary>
 <div>
  
-  </div>
+```
+O Versionamento Semântico (SemVer) possui regras claras sobre quando aumentar os números em uma versão.
+principais (MAJOR);
+secundários (MINOR);
+correções (PATCH);
+
+Aqui estão as especificações:
+
+MAJOR version (X.y.z):
+Deve ser incrementado quando são feitas alterações incompatíveis com versões anteriores.
+Geralmente, isso inclui mudanças significativas que quebram a compatibilidade com versões anteriores,
+como alterações na API que não são retrocompatíveis.
+
+MINOR version (x.Y.z):
+Deve ser incrementado quando funcionalidades são adicionadas de maneira retrocompatível.
+Isso indica a adição de novas funcionalidades ou aprimoramentos à API,
+mas sem quebrar a compatibilidade com versões anteriores.
+
+PATCH version (x.y.Z):
+Deve ser incrementado para correções de bugs retrocompatíveis.
+Indica que foram feitas correções de bugs ou pequenas melhorias
+que mantêm a compatibilidade com versões anteriores.
+
+Ao incrementar o MAJOR version, os números MINOR e PATCH devem ser redefinidos para zero.
+Exemplo: 1.2.3 → 2.0.0.
+
+Ao incrementar o MINOR version, o número PATCH deve ser redefinido para zero.
+Exemplo: 1.2.3 → 1.3.0.
+
+Ao incrementar o PATCH version, apenas o próprio número PATCH deve ser incrementado.
+Exemplo: 1.2.3 → 1.2.4.
+
+Versão Inicial (0.y.z):
+O SemVer permite que projetos declarem uma fase inicial de desenvolvimento usando a versão principal zero (0.y.z).
+A versão inicial (0.y.z) é indicativa de desenvolvimento inicial, onde qualquer coisa pode mudar a qualquer momento.
+Durante esta fase, a API pública não deve ser considerada estável.
+
+Versão 1.0.0:
+A versão 1.0.0 marca um ponto em que o desenvolvedor considera que a API pública atingiu um nível de estabilidade.
+A partir da versão 1.0.0, as regras de incremento de versão são mais claramente definidas,
+proporcionando consistência no gerenciamento de versões.
+
+Exemplo Prático:
+Se um projeto está em suas fases iniciais, ele pode começar com versões como 0.1.0, 0.2.0,
+indicando um desenvolvimento em andamento. Ao atingir a estabilidade e a definição da API pública,
+eles podem lançar a versão 1.0.0 para marcar o compromisso com a retrocompatibilidade.
+``` 
+
+</div>
 </details>
 
 <details>
   <summary>Por que usar?</summary>
 <div>
  
-  </div>
+```
+É uma forma simples de numerar versões, usando três números principais (MAJOR.MINOR.PATCH).
+Aqui estão algumas razões para usá-lo:
+
+Entendimento Simples:
+Os três números facilitam para desenvolvedores e usuários entenderem as mudanças no software.
+
+Tomada de Decisões Fácil:
+Ajuda na decisão de quando aumentar cada parte da versão.
+
+Consistência no Versionamento:
+Proporciona consistência, evitando ambiguidades na gestão de versões.
+
+Automatização do Próximo Número de Versão:
+Permite a determinação automática do próximo número de versão a ser aplicado
+``` 
+
+</div>
 </details>
 
 ## Estratégias do GitFlow
