@@ -455,4 +455,11 @@ Refs: #123
 </div>
 </details>
 
+## Sites sugeridos
+
+[Versionamento Semântico](https://semver.org/)  
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)  
+[Comandos Git](https://comandosgit.github.io/)  
+[Git-Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
 
