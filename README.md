@@ -349,6 +349,110 @@ Após a conclusão, a branch de release é mesclada na main e develop, marcando 
 </div>
 </details>
 
+## Commit Convencional
 
+<details>
+<summary>Resumo</summary>
+<div>
+
+```
+Conventional Commits é uma convenção para mensagens de commit 
+que simplifica a criação de um histórico compreensível. 
+Essa abordagem facilita o desenvolvimento de ferramentas automatizadas e 
+se alinha ao SemVer, destacando recursos, correções e alterações 
+importantes nas mensagens de commit.
+
+```
+- A mensagem de commit deve ser estruturada da seguinte forma:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+</div>
+</details>
+
+<details>
+<summary>Tipos Padrões</summary>
+<div>
+
+```
+fix: 
+Commits do tipo fix visam corrigir bugs na base de código, 
+alinhando-se ao conceito de PATCH no Versionamento Semântico.
+
+feat: 
+Commits do tipo feat introduzem novos recursos na base de código, 
+seguindo a lógica de MINOR no Versionamento Semântico.
+
+BREAKING CHANGE: 
+Commits que incluem um footer BREAKING CHANGE: ou anexam um ! após o tipo/escopo 
+indicam alterações significativas na API, 
+correlacionando-se com o conceito de MAJOR no Versionamento Semântico.
+```
+</div>
+</details>
+
+<details>
+  <summary>Exemplos</summary>
+<div>
+
+- Mensagem de commit com descrição e rodapé de alteração significativa
+
+```
+feat: permitir que o objeto de configuração fornecido estenda outras configurações
+
+BREAKING CHANGE: a chave `extends` no arquivo de configuração agora é usada para estender outros arquivos de configuração
+``` 
+***
+- Mensagem de commit com ! para chamar a atenção para uma alteração significativa
+
+```
+feat!: enviar um e-mail ao cliente quando um produto for enviado
+```
+***
+- Mensagem de commit com escopo e ! para chamar a atenção para uma alteração significativa
+```
+feat(api)!: enviar um e-mail ao cliente quando um produto for enviado
+```
+***
+- Mensagem de commit com ambos ! e rodapé BREAKING CHANGE
+```
+chore!: descontinuar o suporte ao Node 6
+
+BREAKING CHANGE: utilizar recursos JavaScript não disponíveis no Node 6.
+
+```
+***
+- Mensagem de commit sem corpo
+
+```
+docs: corrigir ortografia do CHANGELOG
+```
+***
+- Mensagem de commit com escopo
+
+```
+feat(lang): adicionar idioma polonês
+```
+***
+- Mensagem de commit com corpo de vários parágrafos e vários rodapés
+```
+fix: prevenir corridas de solicitações
+
+Introduzir um ID de solicitação e uma referência à última solicitação. Ignorar
+respostas recebidas que não sejam da última solicitação.
+
+Remover timeouts que eram usados para mitigar o problema de corrida, mas agora são
+obsoletos.
+
+Revisado por: Z
+Refs: #123
+```
+</div>
+</details>
 
 
